@@ -1,7 +1,7 @@
 export default {
   type: 'object',
   properties: {
-    name: { type: 'string' },
+    name: { type: 'string', minLength: 1, maxLength: 50 },
   },
   required: ['name'],
 } as const;
